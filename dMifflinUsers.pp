@@ -31,7 +31,7 @@ define accounts::virtual ($uid,$realname,$group) {
     gid =>  5000,
   }
 
- dundermifflin accounts {
+ class accounts {
 
   @accounts::virtual { 'mscott':
     uid             =>  1100,
@@ -128,4 +128,24 @@ define accounts::virtual ($uid,$realname,$group) {
     realname        =>  'Madison Rockwell',
     group           =>  'none',
   }
+}
+
+node default {
+  include accounts
+  realize (Accounts::Virtual['mscott'])
+  realize (Accounts::Virtual['dschrute'])
+  realize (Accounts::Virtual['jhalpert'])
+  realize (Accounts::Virtual['pbeesly'])
+  realize (Accounts::Virtual['abernard'])
+  realize (Accounts::Virtual['amartin'])
+  realize (Accounts::Virtual['kkapoor'])
+  realize (Accounts::Virtual['omartinez'])
+  realize (Accounts::Virtual['dphilbin'])
+  realize (Accounts::Virtual['tflenderson'])
+  realize (Accounts::Virtual['kmalone'])
+  realize (Accounts::Virtual['plapin'])
+  realize (Accounts::Virtual['shudson'])
+  realize (Accounts::Virtual['mpalmer'])
+  realize (Accounts::Virtual['cbratton'])
+  realize (Accounts::Virtual['mrockwell'])
 }
