@@ -33,22 +33,22 @@ define accounts::virtual ($uid,$realname,$group) {
 
   file {'/home/managers':
     ensure => 'directory',
-    owner => 'mrockwell'
-    group =>  'managers'
+    owner => 'mrockwell',
+    group =>  'managers',
     mode => 2770,
   }
 
   file {'/home/sales':
     ensure => 'directory',
     owner => 'mrockwell',
-    group => 'managers'
+    group => 'managers',
     mode => 2770,
   }
 
   file {'/home/accounting':
     ensure => 'directory',
     owner => 'mrockwell',
-    group => 'accounting'
+    group => 'accounting',
     mode => 2770,
   } 
 
