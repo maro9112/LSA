@@ -54,31 +54,31 @@ define accounts::virtual ($uid,$realname,$group) {
     @accounts::virtual { 'tflenderson':
     uid             =>  1103,
     realname        =>  'Toby Flenderson',
-    group           =>  'none',
+    group           =>  '',
   }
 
     @accounts::virtual { 'dphilbin':
     uid             =>  1104,
     realname        =>  'Darryl Philbin',
-    group           =>  'none',
+    group           =>  '',
   }
 
     @accounts::virtual { 'mpalmer':
     uid             =>  1105,
     realname        =>  'Meredith Palmer',
-    group           =>  'none',
+    group           =>  '',
   }
 
     @accounts::virtual { 'pbeesly':
     uid             =>  1106,
     realname        =>  'Pam Beesly',
-    group           =>  'none',
+    group           =>  '',
   }
 
     @accounts::virtual { 'cbratton':
     uid             =>  1107,
     realname        =>  'Creed Bratton',
-    group           =>  'none',
+    group           =>  '',
   }
 
     @accounts::virtual { 'amartin':
@@ -90,13 +90,13 @@ define accounts::virtual ($uid,$realname,$group) {
     @accounts::virtual { 'kkapoor':
     uid             =>  1109,
     realname        =>  'Kelly Kapoor',
-    group           =>  'none',
+    group           =>  '',
   }
 
     @accounts::virtual { 'abernard':
     uid             =>  1110,
     realname        =>  'Andy Bernard',
-    group           =>  'none',
+    group           =>  '',
   }
 
     @accounts::virtual { 'kmalone':
@@ -126,7 +126,7 @@ define accounts::virtual ($uid,$realname,$group) {
     @accounts::virtual { 'mrockwell':
     uid             =>  1115,
     realname        =>  'Madison Rockwell',
-    group           =>  'none',
+    group           =>  '',
   }
 }
 
