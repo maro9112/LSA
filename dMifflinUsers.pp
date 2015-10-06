@@ -1,5 +1,5 @@
-# Defined type for creating virtual user accounts
-#
+#script for all machines but E
+
 define accounts::virtual ($uid,$realname,$group) {
   user { $title:
     ensure            =>  'present',
