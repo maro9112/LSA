@@ -35,21 +35,21 @@ define accounts::virtual ($uid,$realname,$group) {
     ensure => 'directory',
     owner => 'mrockwell',
     group =>  'managers',
-    mode => 2770,
+    mode => 2070,
   }
 
   file {'/home/sales':
     ensure => 'directory',
     owner => 'mrockwell',
     group => 'sales',
-    mode => 2770,
+    mode => 2070,
   }
 
   file {'/home/accounting':
     ensure => 'directory',
     owner => 'mrockwell',
     group => 'accounting',
-    mode => 2770,
+    mode => 2070,
   } 
 
  class accounts {
