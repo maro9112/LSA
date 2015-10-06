@@ -41,7 +41,7 @@ define accounts::virtual ($uid,$realname,$group) {
   file {'/home/sales':
     ensure => 'directory',
     owner => 'mrockwell',
-    group => 'managers',
+    group => 'sales',
     mode => 2770,
   }
 
